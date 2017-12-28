@@ -32,7 +32,6 @@ inoremap <C-l> <Right>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
 inoremap <C-d> <Delete>
-
 " Quit insert mode
 inoremap jj <Esc>
 inoremap jk <Esc>
@@ -83,7 +82,7 @@ nnoremap <Leader>;; :action CommentByLineComment<CR>
 nnoremap <Leader>bb :action ToggleLineBreakpoint<CR>
 nnoremap <Leader>br :action ViewBreakpoints<CR>
 
-nnoremap <Leader>cv :action ChangeView<CR>
+nnoremap <Leader>cv :action IntroduceVariable<CR>
 
 nnoremap <Leader>cd :action ChooseDebugConfiguration<CR>
 
@@ -94,12 +93,12 @@ nnoremap <Leader>gf :action GotoFile<CR>
 nnoremap <Leader>gi :action GotoImplementation<CR>
 nnoremap <Leader>gs :action GotoSymbol<CR>
 nnoremap <Leader>gt :action GotoTest<CR>
-
-
-nnoremap <Leader>cg :action Generate<CR>
-nnoremap <Leader>cm :action ImplementMethods<CR>
-nnoremap <Leader>cv :action IntroduceVariable<CR>
+nnoremap <Leader>mo :action OverrideMethods<CR>
+nnoremap <Leader>co :action OptimizeImports<CR>
 nnoremap <Leader>cr :action ReformatCode<CR>
+nnoremap <Leader>ce :action RecentFiles<CR>
+nnoremap <Leader>cg :action GenerateGetterAndSetter<CR>
+nnoremap <Leader>ci :action ImplementMethods<CR>
 
 nnoremap <Leader>fp :action ShowFilePath<CR>
 nnoremap <Leader>fu :action FindUsages<CR>
